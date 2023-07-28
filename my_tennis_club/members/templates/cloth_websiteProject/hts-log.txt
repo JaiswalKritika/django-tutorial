@@ -1,0 +1,11 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sun, 25 Jun 2023 14:23:28 at https://flatsome3.uxthemes.com/demos/shop-demos/simple-slider/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://flatsome3.uxthemes.com/demos/shop-demos/simple-slider/ -O1 "C:\Users\91735\Downloads\cloth_websiteProject" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 9 seconds : 97 links scanned, 96 files written (3266205 bytes overall) [937677 bytes received at 13589 bytes/sec], 3045652 bytes transferred using HTTP compression in 85 files, ratio 20%, 14.0 requests per connection
+(No errors, 0 warnings, 0 messages)

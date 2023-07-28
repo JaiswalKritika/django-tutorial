@@ -1,0 +1,275 @@
+<header id="header" class="header has-sticky sticky-jump" style="color:#f8fc32 !important;">
+    {% load static %}
+    <div class="header-wrapper" style="background-color: #26d367 !important;">
+        <div id="masthead" class="header-main ">
+            <div class="header-inner flex-row  logo-left medium-logo-center" role="navigation">
+
+                <!-- Logo -->
+                <div id="logo" class="flex-col logo">
+
+                    <!-- Header logo -->
+                    
+                        <img width="200" height="81" src="{%static 'Kapda Fact shadow.png' %}"
+                            class="header_logo header-logo" /><img width="400" height="84"
+                            src="{%static 'Kapda Fact shadow.png' %}" class="header-logo-dark" />
+                </div>
+
+                <!-- Mobile Left Elements -->
+                <div class="flex-col show-for-medium flex-left">
+                    <ul class="mobile-nav nav nav-left ">
+                        <li class="nav-icon has-icon">
+                            <a href="#" data-open="#main-menu" data-pos="left" data-bg="main-menu-overlay"
+                                data-color="" class="is-small" aria-label="Menu" aria-controls="main-menu"
+                                aria-expanded="false">
+
+                                <i class="icon-menu"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Left Elements -->
+                <div class="flex-col hide-for-medium flex-left
+    flex-grow">
+                    <ul class="header-nav header-nav-main nav nav-left  nav-line-bottom nav-uppercase">
+                        <li
+                            class="header-search header-search-dropdown has-icon has-dropdown menu-item-has-children">
+                            <a href="#" aria-label="Search" class="is-small"><i class="icon-search"></i></a>
+                            <ul class="nav-dropdown nav-dropdown-default">
+                                <li class="header-search-form search-form html relative has-icon">
+                                    <div class="header-search-form-wrapper">
+                                        <div class="searchform-wrapper ux-search-box relative is-normal">
+                                            <form role="search" method="get" class="searchform"
+                                                action="/homepage">
+                                                <div class="flex-row relative">
+                                                    <div class="flex-col flex-grow">
+                                                        <label class="screen-reader-text"
+                                                            for="woocommerce-product-search-field-0">Search
+                                                            for:</label>
+                                                        <input type="search"
+                                                            id="woocommerce-product-search-field-0"
+                                                            class="search-field mb-0"
+                                                            placeholder="Search&hellip;" value="" name="s" />
+                                                        <input type="hidden" name="post_type" value="product" />
+                                                    </div>
+                                                    <div class="flex-col">
+                                                        <button type="submit" value="Search"
+                                                            class="ux-search-submit submit-button secondary button wp-element-button icon mb-0"
+                                                            aria-label="Submit">
+                                                            <i class="icon-search"></i> </button>
+                                                    </div>
+                                                </div>
+                                                <div class="live-search-results text-left z-top"></div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="menu-item-3203"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3203 menu-item-design-default">
+                            <a href="/homepage" class="nav-top-link">Home</a>
+                        </li>
+
+
+                        <li id="menu-item-3234"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-3234 menu-item-design-default has-dropdown">
+                            <a href="/features" class="nav-top-link" aria-expanded="false"
+                                aria-haspopup="menu">Features<i class="icon-angle-down"></i></a>
+                            <ul class="sub-menu nav-dropdown nav-dropdown-default">
+                                 {% for category in category%}
+    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7185" aria-expanded="false">
+        <a href="/shop/?category={{category.id}}"> {{ category.title }}</a>
+
+       </li>
+                            {% endfor %}
+		
+	</ul>
+</li>
+                            
+                        <li id="menu-item-3320"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3320 menu-item-design-default has-dropdown">
+                            <a href="/shop" class="nav-top-link"
+                                aria-expanded="false" aria-haspopup="menu">Shop<i
+                                    class="icon-angle-down"></i></a>
+                            <ul class="sub-menu nav-dropdown nav-dropdown-default">
+                               
+<li class="menu-item nav-dropdown-col">
+  <a href="#">Shop by Occassion</a>
+  <ul class="nav-column nav-dropdown-default">
+    <li class="menu-item"><a href="/engagement_wear">Engagement wear</a></li>
+    <li class="menu-item"><a href="/mehndi_wear">Mehndi wear</a></li>
+    <li class="menu-item"><a href="/haldi_wear">Haldi wear</a></li>
+    <li class="menu-item"><a href="/sangeet_wear">Sangeet wear</a></li>
+    <li class="menu-item"><a href="/birthday_wear">Birthday wear</a></li>
+    <li class="menu-item"><a href="/anniversary_wear">Anniversary wear</a></li>
+    <li class="menu-item"><a href="/pooja_wear">Pooja wear</a></li>
+    <li class="menu-item"><a href="/festive_wear">Festive wear</a></li>
+    <li class="menu-item"><a href="/party_wear">Party wear</a></li>
+    <li class="menu-item"><a href="/casual_wear">Casual wear</a></li>
+    <li class="menu-item"><a href="/formal_wear">Formal wear</a></li>
+    
+  </ul>
+</li>
+
+<li class="menu-item nav-dropdown-col">
+  <a href="#">Shop by Products</a>
+  <ul class="nav-column nav-dropdown-default">
+  <li class="label-new menu-item">
+    </li><li class="menu-item"><a href="/shirt">Shirt</a></li>
+    <li class="menu-item"><a href="/short_kurta">Short Kurta</a></li>
+    <li class="menu-item"><a href="/long_kurta">Long kurta </a></li>
+    <li class="menu-item"><a href="/kurta_shirt">Kurta shirt</a></li>
+    <li class="menu-item"><a href="/pathani_kurta">Pathani kurta</a></li>
+    <li class="menu-item"><a href="/pant">Pant</a></li>
+    <li class="menu-item"><a href="/pyzama">Pyzama</a></li>
+    <li class="menu-item"><a href="/short_pant">Short pant</a></li>
+    <li class="menu-item"><a href="/chiros">Chiros</a></li>
+    <li class="menu-item"><a href="/chudidar_pyzama">Chudidar pyzama</a></li>
+  
+</ul>
+</li>
+
+		
+                            </ul>
+                        </li>
+                        
+                        <li id="menu-item-3204"
+                            class="menu-flyout menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3204 menu-item-design-default has-dropdown">
+                            <a href="" class="nav-top-link"
+                                aria-expanded="false" aria-haspopup="menu">Pages<i
+                                    class="icon-angle-down"></i></a>
+                            <ul class="sub-menu nav-dropdown nav-dropdown-default">
+
+
+
+                                <li id="menu-item-8416"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8416">
+                                    <a href="/shop">SHOPPING CART</a>
+                                </li>
+                                <li id="menu-item-8547"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8547">
+                                    <a href="/checkout">CHECKOUT</a>
+                                </li>
+                                <li id="menu-item-10976"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10976">
+                                    <a href="/my_account">MY ACCOUNT</a>
+                                </li>
+                                 <li id="menu-item-3206"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3206">
+                                    <a href="/contact">CONTACT US</a>
+                                </li>
+                                <li id="menu-item-3205"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3205">
+                                    <a href="/about">ABOUT US</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <!-- Right Elements -->
+                <div class="flex-col hide-for-medium flex-right">
+                    <ul class="header-nav header-nav-main nav nav-right  nav-line-bottom nav-uppercase">
+                        <li class="account-item has-icon
+">
+
+                            <a href="/login"
+                                class="nav-top-link nav-top-not-logged-in " data-open="#login-form-popup">
+                                <span>
+                                    Login </span>
+
+                            </a>
+
+
+
+                        </li>
+                        <li class="header-divider"></li>
+                        <li class="cart-item has-icon has-dropdown">
+
+                            <a href="/cart" title="Cart"
+                                class="header-cart-link is-small">
+
+
+                                <span class="header-cart-title">
+                                    Cart / <span class="cart-price"><span
+                                            class="woocommerce-Price-amount amount"><bdi><span
+                                                    class="woocommerce-Price-currencySymbol">&#36;</span>0,00</bdi></span></span>
+                                </span>
+
+                                <span class="cart-icon image-icon">
+                                    <strong>0</strong>
+                                </span>
+                            </a>
+
+                            <ul class="nav-dropdown nav-dropdown-default">
+                                <li class="html widget_shopping_cart">
+                                    <div class="widget_shopping_cart_content">
+
+
+                                        <p class="woocommerce-mini-cart__empty-message">No products in the cart.
+                                        </p>
+
+
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Right Elements -->
+                <div class="flex-col show-for-medium flex-right">
+                    <ul class="mobile-nav nav nav-right ">
+                        <li class="cart-item has-icon">
+
+                            <a href="/cart"
+                                class="header-cart-link off-canvas-toggle nav-top-link is-small"
+                                data-open="#cart-popup" data-class="off-canvas-cart" title="Cart"
+                                data-pos="right">
+
+                                <span class="cart-icon image-icon">
+                                    <strong>0</strong>
+                                </span>
+                            </a>
+
+
+                            <!-- Cart Sidebar Popup -->
+                            <div id="cart-popup" class="mfp-hide widget_shopping_cart">
+                                <div class="cart-popup-inner inner-padding">
+                                    <div class="cart-popup-title text-center">
+                                        <h4 class="uppercase">Cart</h4>
+                                        <div class="is-divider"></div>
+                                    </div>
+                                    <div class="widget_shopping_cart_content">
+
+
+                                        <p class="woocommerce-mini-cart__empty-message">No products in the cart.
+                                        </p>
+
+
+                                    </div>
+                                    <div class="cart-sidebar-content relative"></div>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="top-divider full-width"></div>
+            </div>
+        </div>
+
+        <!--<div class="header-bg-container fill">
+            <div class="header-bg-image fill"></div>
+            <div class="header-bg-color fill"></div>
+        </div>-->
+    </div>
+</header>
